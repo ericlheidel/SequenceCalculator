@@ -183,7 +183,7 @@ export default function Index() {
             Clear
           </Button>
         </View>
-        <View style={{ padding: 20 }}>
+        <View>
           <Text style={styles.mathProblemText}>{mathProblem}</Text>
         </View>
       </KeyboardAwareScrollView>
@@ -234,5 +234,6 @@ const createStyles = (colorScheme) =>
       marginHorizontal: "auto",
       marginTop: 24,
       fontSize: 24,
+      padding: 60,
     },
   })
