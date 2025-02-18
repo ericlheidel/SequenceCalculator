@@ -49,21 +49,21 @@ export default function Index() {
     }
   }, [startingNumber, commonDifference, numberOfTerms])
 
-  const handleMathProblem = () => {
-    let text = ""
-    for (let i = 0; i < numberOfTerms; i++) {
-      const term = startingNumber + i * commonDifference
-      text += term
-      if (i < numberOfTerms - 1) {
-        text += " + "
-      }
-    }
-    setMathProblem(text)
-  }
+  // const handleMathProblem = () => {
+  //   let text = ""
+  //   for (let i = 0; i < numberOfTerms; i++) {
+  //     const term = startingNumber + i * commonDifference
+  //     text += term
+  //     if (i < numberOfTerms - 1) {
+  //       text += " + "
+  //     }
+  //   }
+  //   setMathProblem(text)
+  // }
 
-  useEffect(() => {
-    handleMathProblem()
-  }, [total])
+  // useEffect(() => {
+  //   handleMathProblem()
+  // }, [total])
 
   const clearState = () => {
     setStartingNumber(0)
@@ -183,9 +183,9 @@ export default function Index() {
             Clear
           </Button>
         </View>
-        <View>
+        {/* <View>
           <Text style={styles.mathProblemText}>{mathProblem}</Text>
-        </View>
+        </View> */}
       </KeyboardAwareScrollView>
     </SafeAreaView>
   )
