@@ -183,7 +183,7 @@ export default function Index() {
             Clear
           </Button>
         </View>
-        <View>
+        <View style={{ padding: 20 }}>
           <Text style={styles.mathProblemText}>{mathProblem}</Text>
         </View>
       </KeyboardAwareScrollView>
