@@ -65,10 +65,6 @@ export default function Index() {
     handleMathProblem()
   }, [total])
 
-  useEffect(() => {
-    Keyboard.dismiss()
-  }, [total])
-
   const clearState = () => {
     setStartingNumber(0)
     setNumberOfTerms(0)
